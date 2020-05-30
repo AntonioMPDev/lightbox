@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="js.js"></script>
+    <style>
+        #lightbox{
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            padding: 2em;
+            background: #333333;
+        }
+        #lightbox img{
+            display: block;
+            margin: auto;
+            max-width: 100%;
+            max-height: 100%;
+        }
+        #lightbox a{
+            font-size:3em;
+            position: absolute; 
+            color: white;
+            background: #111111;
+            border-radius: 50%;
+            width: 1.5em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="card-columns">
+          
+            <!-- Grid column -->
+            <div class="card">
+            <img class="img-fluid img-selec" src="https://www.stockvault.net/data/2007/03/01/102413/preview16.jpg" alt="Card image cap" id="img-1">
+            </div>
+            <!-- Grid column -->
+        
+            <!-- Grid column -->
+            <div class="card">
+            <img class="img-fluid img-selec" src="https://www.stockvault.net/data/2010/10/09/115310/preview16.jpg" alt="Card image cap" id="img-2">
+            </div>
+            <!-- Grid column -->
+        
+            <!-- Grid column -->
+            <div class="card">
+            <img class="img-fluid img-selec" src="https://www.stockvault.net/data/2009/11/08/111653/preview16.jpg" alt="Card image cap" id="img-3">
+            </div>
+            <!-- Grid column -->
+        
+            <!-- Grid column -->
+            <div class="card">
+            <img class="img-fluid img-selec" src="https://www.stockvault.net/data/2009/08/05/109731/preview16.jpg" alt="Card image cap" id="img-4">
+            </div>
+            <!-- Grid column -->
+        
+            <!-- Grid column -->
+            <div class="card">
+            <img class="img-fluid img-selec" src="https://www.stockvault.net/data/2009/11/08/111623/preview16.jpg" alt="Card image cap" id="img-5">
+            </div>
+            <!-- Grid column -->
+        
+            <!-- Grid column -->
+            <div class="card">
+            <img class="img-fluid img-selec" src="https://www.stockvault.net/data/2010/10/21/115455/preview16.jpg" alt="Card image cap" id="img-6">
+            </div>
+    
+            <div class="card">
+                <img class="img-fluid img-selec" src="https://www.stockvault.net/data/2012/07/12/132623/preview16.jpg" alt="Card image cap" id="img-7">
+            </div>
+    
+    
+            <div class="card">
+                <img class="img-fluid img-selec" src="https://www.stockvault.net/photo/116554/sunset-in-lobo" alt="Card image cap" id="img-8">
+            </div>
+    
+            <div class="card">
+                <img class="img-fluid img-selec" src="https://www.stockvault.net/data/2009/07/07/109338/preview16.jpg" alt="Card image cap" id="img-9">
+            </div>
+    
+            <div class="card">
+                <img class="img-fluid img-selec" src="https://www.stockvault.net/data/2013/03/04/142502/preview16.jpg" alt="Card image cap" id="img-10">
+            </div>
+    
+            <div class="card">
+                <img class="img-fluid img-selec" src="https://www.stockvault.net/data/2013/10/12/148713/preview16.jpg" alt="Card image cap" id="img-11">
+            </div>
+    
+            <div class="card">
+                <img class="img-fluid img-selec" src="https://www.stockvault.net/data/2010/10/06/115256/preview16.jpg" alt="Card image cap" id="img-12">
+            </div>
+    
+            <div class="card">
+                <img class="img-fluid img-selec" src="https://www.stockvault.net/data/2010/11/07/115821/preview16.jpg" alt="Card image cap" id="img-13">
+            </div>
+    
+            <div class="card">
+                <img class="img-fluid img-selec" src="https://www.stockvault.net/data/2012/08/27/134484/preview16.jpg" alt="Card image cap" id="img-14">
+            </div>
+            
+            <div class="card">
+                <img class="img-fluid img-selec" src="https://www.stockvault.net/data/2011/11/20/128037/preview16.jpg" alt="Card image cap" id="img-15">
+            </div>
+            
+            <div class="card">
+                <img class="img-fluid img-selec" src="https://www.stockvault.net/data/2011/08/31/126577/preview16.jpg" alt="Card image cap" id="img-16">
+            </div>
+    
+            <div class="card">
+                <img class="img-fluid img-selec" src="https://www.stockvault.net/data/2009/10/08/111039/preview16.jpg" alt="Card image cap" id="img-17">
+            </div>
+    
+            <div class="card">
+                <img class="img-fluid img-selec" src="https://www.stockvault.net/data/2008/08/07/106032/preview16.jpg" alt="Card image cap" id="img-18">
+            </div>
+    
+            <div class="card">
+                <img class="img-fluid img-selec" src="https://www.stockvault.net/data/2008/10/29/106482/preview16.jpg" alt="Card image cap" id="img-19">
+            </div>
+            <!-- Grid column -->
+      
+        </div>
+    </div>
+    
+    <div id="lightbox" style="display: none;">
+        <div ><a href="#" id="close-img"> X</a></div>
+        <img src="" alt="">
+    </div>
+    
+    <script>
+
+          
+    </script>
+</body>
+</html>
